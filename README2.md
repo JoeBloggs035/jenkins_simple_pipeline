@@ -88,16 +88,16 @@ Branch: укажите ветку, например */main или */master
 Зелёные блоки — успешные стадии
 Красные — с ошибками
 Нажмите на любую стадию, чтобы увидеть её лог
-Полезные команды для Jenkins
-# Перезапустить Jenkins (если что-то сломалось)
+# Полезные команды для Jenkins
+## Перезапустить Jenkins (если что-то сломалось)
 docker restart jenkins
 
-# Посмотреть логи Jenkins
+## Посмотреть логи Jenkins
 docker logs -f jenkins
 
-# Войти в контейнер Jenkins
+## Войти в контейнер Jenkins
 docker exec -it jenkins bash
 
-# Проверить версию Jenkins
+## Проверить версию Jenkins
 docker exec jenkins cat /var/jenkins_home/jenkins.version
 
